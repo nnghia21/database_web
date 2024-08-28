@@ -74,16 +74,16 @@ VALUES
 
 INSERT INTO XeMay(MaXe,MaLoai,BienSoXe,TenXe,GiaThue,TrangThai)
 VALUES
-('XM01','XSO','29-B1 244.17','Honda Blade 110',150000,'Chưa cho thuê'),
-('XM02','XSO','18-K4 3551','Yamaha Sirius',150000,'Đang bảo trì'),
-('XM03','XSO','34-C9 444.43','Yamaha Jupiter',150000,'Đang cho thuê'),
-('XM04','XSO','29-B7 090.01','Honda Wave RS110',150000,'Đang cho thuê'),
-('XM05','XTG','29-S1 213.78','Yamaha Nouvo Automatic',200000,'Chưa cho thuê'),
-('XM06','XTG','31-A1 417.60','Honda Vision',200000,'Đang cho thuê'),
-('XM07','XTG','29-B1 331.43','Honda Airblade',200000,'Chưa cho thuê'),
-('XM08','XTC','29-F1 679.80','Honda Winner 150',300000,'Đang cho thuê'),
-('XM09','XTC','18-X3 119.17','Yamaha Exciter',300000,'Chưa cho thuê'),
-('XM10','PKL','18-A1 288.03','Honda CB300r',500000,'Chưa cho thuê')
+('XM01','XSO','29-B1 244.17','Honda Blade 110',150000,N'Chưa cho thuê'),
+('XM02','XSO','18-K4 3551','Yamaha Sirius',150000,N'Đang bảo trì'),
+('XM03','XSO','34-C9 444.43','Yamaha Jupiter',150000,N'Đang cho thuê'),
+('XM04','XSO','29-B7 090.01','Honda Wave RS110',150000,N'Đang cho thuê'),
+('XM05','XTG','29-S1 213.78','Yamaha Nouvo Automatic',200000,N'Chưa cho thuê'),
+('XM06','XTG','31-A1 417.60','Honda Vision',200000,N'Đang cho thuê'),
+('XM07','XTG','29-B1 331.43','Honda Airblade',200000,N'Chưa cho thuê'),
+('XM08','XTC','29-F1 679.80','Honda Winner 150',300000,N'Đang cho thuê'),
+('XM09','XTC','18-X3 119.17','Yamaha Exciter',300000,N'Chưa cho thuê'),
+('XM10','PKL','18-A1 288.03','Honda CB300r',500000,N'Chưa cho thuê')
 ;
 
 INSERT INTO KhachHang(MaKH,HoTen,GioiTinh,DiaChi,SDT,Email)
