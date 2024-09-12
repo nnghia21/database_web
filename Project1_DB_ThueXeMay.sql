@@ -29,6 +29,12 @@ CREATE TABLE XeMay(
 
 );
 
+CREATE TABLE DangKy(
+	Email varchar(50) not null primary key,
+	Username varchar(50) character set utf8mb4 not null,
+    Passwords varchar(150) not null
+);
+
 CREATE TABLE KhachHang(
 	MaKH varchar(10) not null primary key,
 	HoTen varchar(50) character set utf8mb4 null,
@@ -36,7 +42,9 @@ CREATE TABLE KhachHang(
 	DiaChi varchar(300) character set utf8mb4 null,
 	SDT varchar(10) null,
 	Email varchar(50) null,
-	CCCD varchar(12) null 
+	CCCD varchar(12) null,
+    
+    foreign key (Email) references DangKy(Email)
 );
 
 CREATE TABLE NhanVien(
@@ -110,6 +118,15 @@ VALUES
 ('XM08','XTC','HN-04','29-F1 679.80','Honda Winner 150',300000,'Đang cho thuê'),
 ('XM09','XTC','HN-06','18-X3 119.17','Yamaha Exciter',300000,'Chưa cho thuê'),
 ('XM10','PKL','HN-03','18-A1 288.03','Honda CB300r',500000,'Chưa cho thuê')
+;
+
+INSERT INTO DangKy(Email, Username, Passwords)
+VALUES 
+('ann@gmail.com','nguyenan','an1234'),
+('ba33@gmail.com','','ba33','333333'),
+('natran@gmail.com','natran','natran12'),
+('anhnguyen@gmail.com','Anh Nguyen','moonsky1'),
+('hungdd@gmail.com','daoduyhung','hung123456789')
 ;
 
 INSERT INTO KhachHang(MaKH,HoTen,GioiTinh,DiaChi,SDT,Email,CCCD)
